@@ -51,6 +51,16 @@
     color: #ccc;
 }
 
+#imagen
+{
+    max-width: 95.582887%;
+    margin-right: 2.2058823%;
+    grid-column: 1 / 4;
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 #btnEnviar
 {
     height: 50px;
