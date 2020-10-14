@@ -1,0 +1,43 @@
+@media (max-width: 768px)
+{
+    #formDatos
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #nombre
+    {
+        grid-column: 1 / 3;
+        padding-right: 0px;
+    }
+
+    #btnEnviar
+    {
+        grid-column-start: 2;
+    }
+
+}
+
+@media (max-width: 576px)
+{
+    #formularioCalles
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #formDatos
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #nombre
+    {
+        grid-column: 1 / 2;
+        padding: .375rem .75rem;;
+    }
+
+    #btnEnviar
+    {
+        grid-column-start: 1;
+    }
+}

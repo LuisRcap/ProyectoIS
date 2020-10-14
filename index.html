@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 
 <body>
@@ -56,32 +57,32 @@
 
             <h2 class="col-11 text-center mt-4 mb-3">Datos del solicitante</h2>
             <form id="formDatos" class="col-11">
-                <div class="form-group col-11">
+                <div id="nombre" class="form-group col-11">
                     <label>Nombre(s)</label>
                     <input type="text" class="form-control" placeholder="Nombre(s)" />
                 </div>
 
-                <div class="form-group col-11">
+                <div id="ap-paterno" class="form-group col-11">
                     <label>Apellido paterno</label>
                     <input type="text" class="form-control" placeholder="Apellido paterno" />
                 </div>
 
-                <div class="form-group col-11">
+                <div id="ap-materno" class="form-group col-11">
                     <label>Apellido materno</label>
                     <input type="text" class="form-control" placeholder="Apellido materno" />
                 </div>
 
-                <div class="form-group col-11">
+                <div id="email" class="form-group col-11">
                     <label>Email*</label>
                     <input type="email" class="form-control" placeholder="email" />
                 </div>
 
-                <div class="form-group col-11">
+                <div id="r-email" class="form-group col-11">
                     <label>Repetir email*</label>
                     <input type="text" class="form-control" placeholder="email" />
                 </div>
 
-                <div class="form-group col-11">
+                <div id="sexo" class="form-group col-11">
                     <label>Sexo</label>
                     <select class="form-control">
                         <option>Hombre</option>
@@ -89,20 +90,21 @@
                     </select>
                 </div>
 
-                <div class="form-group col-11">
+                <div id="telefono" class="form-group col-11">
                     <label>Teléfono</label>
                     <input type="tel" class="form-control" placeholder="Tel." />
                 </div>
 
-                <div class="form-group col-11">
+                <div id="celular" class="form-group col-11">
                     <label>Celular</label>
                     <input type="tel" class="form-control" placeholder="5555555555" />
                 </div>
 
-                <div class="form-group col-11">
+                <div id="edad" class="form-group col-11">
                     <label>Edad</label>
                     <input type="number" class="form-control" placeholder="18" />
                 </div>
+
                 <input id="btnEnviar" type="submit" class="btn btn-success" value="Enviar" />
                 
             </form>
