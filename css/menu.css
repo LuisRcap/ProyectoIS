@@ -97,13 +97,35 @@ header{
     margin-bottom: 50px;
 }
 
-.datos-prin{
-    padding: 0 50px;
-}
-
 .foto{
     width: 200px;
     height: 200px;
+    margin-right: 25px;
+}
+
+.datos-prin{
+    padding: 0 25px;
+    box-shadow: inset -1px 0 0  rgb(221, 208, 190);
+}
+
+.campo{
+    font-weight: bold;
+}
+
+.reparado{
+    color: #28a745;
+}
+
+.por-verificar{
+    color: #ffc107;
+}
+
+.verificado{
+    color: #007bff;
+}
+
+.en-curso{
+    color: #007bff;
 }
 
 .datos-pers > p{
@@ -113,5 +135,6 @@ header{
 .icono-ver{
     width: 52px;
     height: 52px;
+    margin-left: 25px;
     cursor: pointer;
 }
