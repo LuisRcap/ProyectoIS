@@ -97,12 +97,21 @@ header{
     margin-bottom: 50px;
 }
 
+.datos-prin{
+    padding: 0 50px;
+}
+
 .foto{
     width: 200px;
     height: 200px;
 }
 
+.datos-pers > p{
+    margin: 0;
+}
+
 .icono-ver{
     width: 52px;
     height: 52px;
+    cursor: pointer;
 }
