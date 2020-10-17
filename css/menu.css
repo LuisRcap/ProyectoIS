@@ -37,8 +37,16 @@ header{
     margin: 0;
     font-size: 25px;
     font-weight: bold;
-    color: #ffffff;
-    text-shadow: -3px 4px 5px rgba(0, 0, 0, 0.8);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 143.25px;
+    height: 62px;
 }
 
 .cerrar-sesion{
@@ -167,6 +175,10 @@ header{
 }
 
 @media only screen and (max-width: 600px){
+    .logo{
+        display: none;
+    }
+    
     .cerrar-sesion > p{
         display: none;
     }
