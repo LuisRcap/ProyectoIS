@@ -17,9 +17,15 @@
 #logo
 {
     height: 100%;
-    text-align: center;
-    font-size: 40px;
-    line-height: 90px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img{
+    width: 143.25px;
+    height: 62px;
 }
 
 #mapa h2
