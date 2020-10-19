@@ -1,4 +1,4 @@
-create database Baches;
+create database if not exists Baches;
 
 use Baches;
 
@@ -40,12 +40,8 @@ create table if not exists Notificacion(
     hora            time not null,
     foto            blob not null,
     matriculaTrabajador varchar(20),
+    correoCiudadano varchar(45),
     constraint PK_idNotificacion primary key( idNotificacion )
-);
-
-create table if not exists Ciudadano_notifica(
-    idNotificacion  int,
-    correo          varchar(45)
 );
 
 /*  RESTRICCIONES DE TABLAS  */
@@ -58,10 +54,6 @@ alter table Notificacion add constraint FK_matriculaTrabajador
     foreign key( matriculaTrabajador )
     references Trabajador( matricula );
 
-alter table Ciudadano_notifica add constraint FK_idNotificacion
-    foreign key( idNotificacion )
-    references Notificacion( idNotificacion );
-
-alter table Ciudadano_notifica add constraint FK_correo
-    foreign key( correo )
+alter table Notificacion add constraint FK_correoCiudadano
+    foreign key( correoCiudadano )
     references Ciudadano( correo );
