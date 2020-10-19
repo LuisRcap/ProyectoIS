@@ -3,7 +3,7 @@ create database Baches;
 use Baches;
 
 /*  CREACIÓN DE TABLAS  */
-create table if not exists Notificador(
+create table if not exists Ciudadano(
     correo      varchar(45) not null,
     nombre      varchar(45),
     apellidoP   varchar(45),
@@ -43,7 +43,7 @@ create table if not exists Notificacion(
     constraint PK_idNotificacion primary key( idNotificacion )
 );
 
-create table if not exists Notificador_notifica(
+create table if not exists Ciudadano_notifica(
     idNotificacion  int,
     correo          varchar(45)
 );
@@ -58,10 +58,10 @@ alter table Notificacion add constraint FK_matriculaTrabajador
     foreign key( matriculaTrabajador )
     references Trabajador( matricula );
 
-alter table Notificador_notifica add constraint FK_idNotificacion
+alter table Ciudadano_notifica add constraint FK_idNotificacion
     foreign key( idNotificacion )
     references Notificacion( idNotificacion );
 
-alter table Notificador_notifica add constraint FK_correo
+alter table Ciudadano_notifica add constraint FK_correo
     foreign key( correo )
-    references Notificador( correo );
+    references Ciudadano( correo );
