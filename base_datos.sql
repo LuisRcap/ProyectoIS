@@ -38,7 +38,8 @@ create table if not exists Notificacion(
     codigoPostal    varchar(5),
     fecha           date not null,
     hora            time not null,
-    foto            blob not null,
+    foto            blob,
+    estadoActual    varchar(13) not null,
     matriculaTrabajador varchar(20),
     correoCiudadano varchar(45),
     constraint PK_idNotificacion primary key( idNotificacion )
